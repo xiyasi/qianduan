@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/index.css">
+</head>
+<body>
+<div class="left">
+    <!--表单区 start-->
+    <form autocomplete="off">
+        <div class="item">
+            <span>姓名</span><input type="text" id="username" required placeholder="请输入姓名">
+        </div>
+        <div class="item">
+            <span>评分</span><input type="text"  id="score" required placeholder="请输入评分">
+        </div>
+        <div class="item">
+            <span>薪资</span><input type="text"  id="salary" required placeholder="请输入薪资">
+        </div>
+        <div class="item">
+            <input type="button" class="btn" value="添加">
+        </div>
+    </form>
+    <!--表单区 end-->
+    <!--表格区 start-->
+    <table>
+        <colgroup>
+            <col width="33%">
+            <col width="33%">
+            <col>
+        </colgroup>
+        <thead>
+        <tr>
+            <th>姓名</th>
+            <th>评分</th>
+            <th>薪资</th>
+            <th>操作</th>
+        </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+    <!--表格区 end-->
+</div>
+<div class="right">
+    <div id="line"></div>
+    <div id="bar"></div>
+</div>
+
+<script src="./js/echarts.min.5.1.1.js"></script>
+<script src="./js/jQuery.js"></script>
+<script src="./js/index.js"></script>
+</body>
+</html>
